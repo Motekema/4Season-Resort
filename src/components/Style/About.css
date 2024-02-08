@@ -1,0 +1,33 @@
+.about-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h3 {
+  color: #333;
+  margin-left: -110px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-left: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .about-container {
+    max-width: 90%;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  h1,
+  h3 {
+    margin-left: 0;
+  }
+}

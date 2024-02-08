@@ -1,0 +1,80 @@
+/* CardSlider.css */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE/Edge */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+.service {
+  width: 300px;
+  background-color: #dddddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px auto; /* Center horizontally */
+  text-align: center;
+}
+
+.service img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.service h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+.service p {
+  margin: 0;
+  font-size: 1rem;
+  color: #888888;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .slider {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service {
+    width: calc(50% - 20px); /* Adjust based on the number of items per row */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .service {
+    width: calc(100% - 20px); /* Adjust based on the number of items per row */
+  }
+}
+.additional-images {
+  display: grid;
+  background-color: #dddddd;
+  padding: 19px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-left: 19px;
+  margin-right: 19px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(190px, 1fr)
+  ); /* Adjust column width as needed */
+  gap: 10px; /* Adjust gap between images */
+}
+
+.additional-images img {
+  width: 100%;
+  border-radius: 10px; /* Remove border radius */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+.conclusion {
+  padding: 15px;
+}

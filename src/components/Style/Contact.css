@@ -1,0 +1,85 @@
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 400px;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-left: -1px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container textarea {
+  height: 150px;
+}
+
+.form-container button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button.whatsapp {
+  background-color: #25d366; /* Change WhatsApp button color to green */
+}
+
+.form-container button:hover {
+  background-color: #c1d3e7;
+}
+
+.form-container button:last-child {
+  margin-right: 0;
+}
+.map-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-container,
+  .map-container {
+    flex: 1;
+    max-width: none;
+  }
+}
